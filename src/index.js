@@ -3,10 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {IntlProvider} from 'react-intl'
+import Wrapper from "./components/Wrapper"
 
+import 'bootstrap/dist/css/bootstrap.min.css';
 ReactDOM.render(
   <React.StrictMode>
+    <Wrapper>
     <App />
+
+    </Wrapper>
   </React.StrictMode>,
   document.getElementById('root')
 );
